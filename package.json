@@ -1,6 +1,6 @@
 {
   "name": "hws2",
-  "homepage": "http://github.com/sky7way/hws2-master.git",
+  "homepage": "https://github.io/sky7way/hws2-master",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,7 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
