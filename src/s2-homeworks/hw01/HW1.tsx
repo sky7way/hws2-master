@@ -33,10 +33,10 @@ export const message0: MessageType= {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Соник',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'some textsome textsome hgh iuoh;i ojojo oojkjjo textsomluiluililuyl', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -44,11 +44,11 @@ export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Соня', // можно менять
     },
     message: {
         text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        time: '22:04', // можно менять
     },
 }
 
@@ -56,6 +56,7 @@ const HW1 = () => {
     return (
         <div id={'hw1'}>
             <div className={s2.hwTitle}>Homework #1</div>
+            <hr className={s2.hrLine}/>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>

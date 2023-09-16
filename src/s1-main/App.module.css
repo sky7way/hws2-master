@@ -3,9 +3,18 @@
 }
 
 .hw {
-
+    padding: 15px;
 }
 
 .hwTitle {
+    display: flex;
+    margin: 15px 15px;
+}
 
+.hrLine {
+    margin: 20px 0;
+    padding: 0 20px;
+    height: 0;
+    border: none;
+    border-top: 1px solid rgba(51, 51, 51, 0.3);
 }

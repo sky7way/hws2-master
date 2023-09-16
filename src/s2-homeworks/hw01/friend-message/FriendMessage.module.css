@@ -7,11 +7,14 @@
 }
 
 .friendImageAndText img {
-
+    width: 70px;
 }
 
 .friendText {
-
+    display: inline-block;
+    background-color: #0d80f2;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .friendText:after {
