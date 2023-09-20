@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react'
+import React, {useState} from 'react'
 import Affairs from './affairs/Affairs'
 import s2 from '../../s1-main/App.module.css'
 
@@ -42,10 +42,7 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
         return affairs.filter(a => a.priority === filter);
     }
 }
-export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
-
-    return affairs.filter(a => a._id !== _id) // need to fix
-}
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => affairs.filter(a => a._id !== _id);
 
 function HW2() {
     const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
