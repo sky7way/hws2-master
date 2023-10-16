@@ -1,7 +1,12 @@
 .input:focus {
+    min-height: 32px;
 }
 
 .input {
+    margin-left: 10px;
+    border-radius: 6px;
+    min-height: 28px;
+    outline: none;
 }
 
 .inputWrapper {
@@ -11,16 +16,10 @@
 
 .superInput {
     border: 1px solid;
-    border-radius: 6px;
-    min-height: 28px;
-    outline: none;
 }
 
 .errorInput {
     border: 1px solid red;
-    border-radius: 6px;
-    outline: none;
-    min-height: 28px;
 }
 
 .errorInput:focus {
@@ -29,4 +28,5 @@
 
 .error {
     color: red;
+    margin-left: 10px;
 }

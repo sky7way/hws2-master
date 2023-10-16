@@ -1,14 +1,12 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
-import {Simulate} from "react-dom/test-utils";
-import input = Simulate.input;
 
-export type GreetingPropsType = {
+type GreetingPropsType = {
     name: string // need to fix any
-    setNameCallback: (event: ChangeEvent<HTMLInputElement>) => void; // need to fix any
+    setNameCallback: (value: ChangeEvent<HTMLInputElement>) => void // need to fix any
     addUser: () => void // need to fix any
     onBlur: () => void // need to fix any
-    onEnter: (e: React.KeyboardEvent<HTMLInputElement>) => void // need to fix any
+    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void // need to fix any
     error: string | null // need to fix any
     totalUsers: number // need to fix any
     lastUserName?: string // need to fix any
@@ -28,7 +26,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     } // деструктуризация пропсов
 ) => {
     const inputClass = error ? s.errorInput : s.input // need to fix with (?:)
-
+    console.log(name)
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <div className={s.text}>

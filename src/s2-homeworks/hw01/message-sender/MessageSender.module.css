@@ -1,18 +1,36 @@
 .sendForm {
-
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .textarea {
-
+    font-size: 16px;
+    border-radius: 18px;
+    resize: none;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 40px;
+    min-height: 40px;
+    width: 800px;
 }
 
 .button {
-
+    height: 40px;
+    min-height: 40px;
+    width: 130px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #0d80f2;
+    color: #DDEEFF;
 }
 
 .button:hover {
-
+    background-color: #FFD700; /* Пример цвета фона при наведении */
+    color: #333;
 }
 .button:active {
-
+    background-color: #FFA500; /* Пример цвета фона при активации */
 }

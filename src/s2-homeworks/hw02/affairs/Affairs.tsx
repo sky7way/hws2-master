@@ -1,32 +1,31 @@
 import React from 'react'
 import Affair from './affair/Affair'
-import {AffairType, FilterType} from '../HW2'
+import {AffairPriorityType, AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
 
 type AffairsPropsType = {
     data: AffairType[] // need to fix any
-    setFilter: React.Dispatch<React.SetStateAction<FilterType>>
+    setFilter:React.Dispatch<React.SetStateAction<FilterType>>
     deleteAffairCallback: (_id: number) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
-
     const setAll = () => {
         // need to fix
         props.setFilter('all')
     }
     const setHigh = () => {
         // need to fix
-        props.setFilter('high')
+        props.setFilter('high');
     }
     const setMiddle = () => {
         // need to fix
-        props.setFilter('middle')
+        props.setFilter('middle');
     }
     const setLow = () => {
         // need to fix
-        props.setFilter('low')
+        props.setFilter('low');
     }
 
     const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
