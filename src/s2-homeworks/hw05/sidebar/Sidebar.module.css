@@ -1,68 +1,66 @@
-/* Стили боковой панели */
 .sidebar {
-    width: 200px; /* Ширина боковой панели */
-    height: 100%;
-    background-color: #f2f2f2; /* Цвет фона боковой панели */
-    display: flex;
-    transition: transform 0.3s;
-    position: fixed; /* Фиксированное позиционирование, чтобы боковая панель оставалась видимой при прокрутке */
+    position: absolute;
     top: 0;
-    z-index: 1000; /* Убедитесь, что боковая панель находится над другими элементами */
-    overflow-y: auto; /* Если содержимое боковой панели слишком длинное, разрешить прокрутку */
-    cursor: pointer;
+    left: 0;
+    width: 317px;
+    height: 100vh;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.10), 0 10px 40px 0 rgba(29, 33, 38, 0.13);
+    display: none;
 }
 
 .sidebar.open {
-    transform: translateX(0); /* Показать боковую панель */
+    display: block;
 }
 
 .background {
-
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.3;
 }
 
-/* Стили навигации */
 .nav {
-    margin: 0 auto;
-    padding: 20px; /* Отступ внутри навигации (настройте по вашему усмотрению) */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    gap: 45px;
+    padding: 63px 75px;
 }
 
 .nav a {
     text-decoration: none;
-    cursor: pointer;
-    display: block;
-    color: #000; /* Цвет текста ссылок */
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000
 
 }
 
 .nav a:hover {
-    color: #5090f2; /* Цвет текста ссылок при наведении курсора */
+    color: #58ACFF;
+}
+.nav a:active{
+    color:  #3D6B99;
 }
 
 .nav a.active {
-    color: #1962e1; /* Цвет текста активной ссылки */
-    text-decoration: underline #1962e1;
+    text-decoration: underline;
+    color: #0059B2;
+
 }
 
-/* Стили закрытия */
 .close {
-    display: block;
-    cursor: pointer;
-    position: absolute; /* Абсолютное позиционирование для кнопки закрытия */
-    top: 10px; /* Отступ от верхней границы боковой панели */
-    right: 10px; /* Отступ от правой границы боковой панели */
-    margin: 0 0 20px 0;
+    position: relative;
+    top: 24px;
+    left: 270px;
     border: none;
-}
-
-.close>button:hover{
-    color: #5090f2; /* Цвет текста ссылок при наведении курсора */
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .close img {
-    height: 18px; /* Ширина изображения кнопки закрытия (настройте по вашему усмотрению) */
-    cursor: pointer;
+    width: 24px;
+    height: 24px;
 }
