@@ -10,17 +10,17 @@
     position: fixed;
     top: 0;
     left: 0; /* Оставить боковую панель видимой при всей ширине экрана */
-    z-index: 900;
+    z-index: 999;
     overflow-y: auto;
 }
 
 .burgerMenuIcon {
     cursor: pointer;
     width: 24px;
-    margin-left: 10px; /* Отступ от левого края */
+    margin-left: 80px; /* Отступ от левого края */
 }
 
 .header h1 {
     font-size: 24px;
-    margin-right: 10px; /* Отступ от правого края */
+    margin-right: 80px; /* Отступ от правого края */
 }

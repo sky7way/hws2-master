@@ -24,7 +24,10 @@ export const Layout: FC<PropsType> = ({children}) => {
                 <Header handleOpen={handleOpen}/>
             )}
 
-            <div style={{marginLeft: open ? '250px' : '0'}}>
+            {/*<Sidebar open={open} handleClose={handleClose}/>*/}
+            {/*<Header handleOpen={handleOpen}/>*/}
+
+            <div>
                 {children}
             </div>
         </>
